@@ -26,26 +26,26 @@ function setup() {
 
 createCanvas(windowWidth, windowHeight);
 
-  maze = loadImage("/images/maze.jpg");
-  arrowUP = loadImage("/images/arrowUP.png");
-  arrowRIGHT = loadImage("/images/arrowRIGHT.png");
-  arrowDOWN = loadImage("/images/arrowDOWN.png");
-  arrowLEFT = loadImage("/images/arrowLEFT.png");
-  character = loadImage("/images/character.png");
-  bAnt = loadImage("/images/blurry ant.png");
-  bLeg = loadImage("/images/blurry leg.png");
-  bParrot = loadImage("/images/blurry parrot.png");
-  bPig = loadImage("/images/blurry pig.png");
-  heart = loadImage("/images/hear.png");
-  parrotToken = loadImage("/images/parrot.png");
-  legToken = loadImage("/images/leg.png");
-  pigToken = loadImage("/images/pig 1.png");
-  antToken = loadImage("/images/ant.png");
-  parrot = loadImage("/images/parrot.png");
-  leg = loadImage("/images/leg.png");
-  pig = loadImage("/images/pig 1.png");
-  ant = loadImage("/images/ant.png");
-  question = loadImage("/images/question mark.png");
+  maze = loadImage("images/maze.jpg");
+  arrowUP = loadImage("images/arrowUP.png");
+  arrowRIGHT = loadImage("images/arrowRIGHT.png");
+  arrowDOWN = loadImage("images/arrowDOWN.png");
+  arrowLEFT = loadImage("images/arrowLEFT.png");
+  character = loadImage("images/character.png");
+  bAnt = loadImage("images/blurry ant.png");
+  bLeg = loadImage("images/blurry leg.png");
+  bParrot = loadImage("images/blurry parrot.png");
+  bPig = loadImage("images/blurry pig.png");
+  heart = loadImage("images/hear.png");
+  parrotToken = loadImage("images/parrot.png");
+  legToken = loadImage("images/leg.png");
+  pigToken = loadImage("images/pig 1.png");
+  antToken = loadImage("images/ant.png");
+  parrot = loadImage("images/parrot.png");
+  leg = loadImage("images/leg.png");
+  pig = loadImage("images/pig 1.png");
+  ant = loadImage("images/ant.png");
+  question = loadImage("images/question mark.png");
 
 if (windowHeight>windowWidth){
   cellSize = windowWidth/12;

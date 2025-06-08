@@ -45,33 +45,33 @@ function setup() {
 
 createCanvas(windowWidth, windowHeight);
 
-  maze = loadImage("/images/maze.jpg");
-  antsup = loadImage("/images/antaup.gif");
-  antsright = loadImage("/images/antsright.gif");
-  antsdown = loadImage("/images/antsdown.gif");
-  antsleft = loadImage("/images/antsleft.gif");
-  arrowUP = loadImage("/images/arrowUP.png");
-  arrowRIGHT = loadImage("/images/arrowRIGHT.png");
-  arrowDOWN = loadImage("/images/arrowDOWN.png");
-  arrowLEFT = loadImage("/images/arrowLEFT.png");
-  character = loadImage("/images/character.png");
-  bAnt = loadImage("/images/blurry ant.png");
-  bLeg = loadImage("/images/blurry leg.png");
-  bParrot = loadImage("/images/blurry parrot.png");
-  bPig = loadImage("/images/blurry pig.png");
-  heart = loadImage("/images/heart.png");
-  deadheart = loadImage("/images/deadheart.png");
-  deadheart = loadImage("/images/deadheart.png");
-  parrotToken = loadImage("/images/littleparrot.png");
-  legToken = loadImage("/images/littleleg.png");
-  pigToken = loadImage("/images/littlepig.png");
-  antToken = loadImage("/images/littleant.png");
-  parrot = loadImage("/images/parrot.png");
-  leg = loadImage("/images/leg.png");
-  pig = loadImage("/images/pig.png");
-  ant = loadImage("/images/ant.png");
-  question = loadImage("/images/question.png");
-  trapdoor = loadImage("/images/trap.jpg");
+  maze = loadImage("images/maze.jpg");
+  antsup = loadImage("images/antaup.gif");
+  antsright = loadImage("images/antsright.gif");
+  antsdown = loadImage("images/antsdown.gif");
+  antsleft = loadImage("images/antsleft.gif");
+  arrowUP = loadImage("images/arrowUP.png");
+  arrowRIGHT = loadImage("images/arrowRIGHT.png");
+  arrowDOWN = loadImage("images/arrowDOWN.png");
+  arrowLEFT = loadImage("images/arrowLEFT.png");
+  character = loadImage("images/character.png");
+  bAnt = loadImage("images/blurry ant.png");
+  bLeg = loadImage("images/blurry leg.png");
+  bParrot = loadImage("images/blurry parrot.png");
+  bPig = loadImage("images/blurry pig.png");
+  heart = loadImage("images/heart.png");
+  deadheart = loadImage("images/deadheart.png");
+  deadheart = loadImage("images/deadheart.png");
+  parrotToken = loadImage("images/littleparrot.png");
+  legToken = loadImage("images/littleleg.png");
+  pigToken = loadImage("images/littlepig.png");
+  antToken = loadImage("images/littleant.png");
+  parrot = loadImage("images/parrot.png");
+  leg = loadImage("images/leg.png");
+  pig = loadImage("images/pig.png");
+  ant = loadImage("images/ant.png");
+  question = loadImage("images/question.png");
+  trapdoor = loadImage("images/trap.jpg");
 
 
 ANT = bAnt;
@@ -996,7 +996,7 @@ if(currCell == "k6" || currCell == "k7" || currCell == "k10"){
 
 function hereIsErrorButton(){
 
-    errorButton = createImg("/images/hey!.png", "error button");
+    errorButton = createImg("images/hey!.png", "error button");
     errorButton.position(a-(cellSize*2.7), b+(cellSize*1)); 
     errorButton.size((cellSize * 16.5), (cellSize * 13));
     errorButton.mousePressed(errorMessage);
@@ -1014,8 +1014,8 @@ errorButton.hide();
 function losethegame(){
   console.log("you lose the game");
   
-  tryagainButton = createImg("/images/tryagain.jpg", "try again button");
-  skipButton = createImg("/images/skip.jpg", "skip button");
+  tryagainButton = createImg("images/tryagain.jpg", "try again button");
+  skipButton = createImg("images/skip.jpg", "skip button");
  
   tryagainButton.position(a+(cellSize*0.5), b+(cellSize*4)); 
   tryagainButton.size((cellSize * 5), (cellSize * 3));
@@ -1046,7 +1046,7 @@ x = 200;
  function success(){
   skipButton.hide();
   console.log("you win the game");
-  successButton = createImg("/images/success.jpg", "success button");
+  successButton = createImg("images/success.jpg", "success button");
   successButton.position(a, b+(cellSize*1.5)); 
   successButton.size((cellSize * 11), (cellSize * 8));
   successButton.mousePressed(successMessage);

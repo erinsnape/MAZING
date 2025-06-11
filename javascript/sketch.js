@@ -19,6 +19,9 @@ let showAntToken = true;
 let showLegToken = true;
 let error = false;
 let errorButton;
+let skipButton;
+let tryagainButton;
+let successButton;
 let windowshape;
 let x = 200;
 let antx;
@@ -643,6 +646,7 @@ letter = letter -1 ;
     goDown = (cellSize/28);
     success();
     errorButton.hide();
+    letter = letter -1 ;
   }
 
 }

@@ -84,16 +84,16 @@ LEG = bLeg;
 
 if (windowHeight>windowWidth){
   if(windowHeight/24 > windowWidth/12){
-    cellSize = windowWidth/13;
+    cellSize = windowWidth/12;
       windowshape = 1;
   }
   if(windowHeight/24 < windowWidth/12){
-  cellSize = windowHeight/26;
+  cellSize = windowHeight/24;
   windowshape = 1;
   }
 
 } else if(windowWidth>windowHeight){
-  cellSize = windowHeight/26;
+  cellSize = windowHeight/24;
   windowshape = 2;
 }
 
@@ -121,6 +121,8 @@ ant2y = (b);
 ant2x = (a);
 
 hereIsErrorButton();
+losethegame();
+  success();
 
 speed = cellSize/28;
 }
@@ -1058,6 +1060,7 @@ x = 200;
   successButton.position(a, b+(cellSize*1.5)); 
   successButton.size((cellSize * 11), (cellSize * 8));
   successButton.mousePressed(successMessage);
+   successButton.hide();
  }
 
  function successMessage(){

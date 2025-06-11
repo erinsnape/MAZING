@@ -84,16 +84,16 @@ LEG = bLeg;
 
 if (windowHeight>windowWidth){
   if(windowHeight/24 > windowWidth/12){
-    cellSize = windowWidth/12;
+    cellSize = windowWidth/13;
       windowshape = 1;
   }
   if(windowHeight/24 < windowWidth/12){
-  cellSize = windowHeight/24;
+  cellSize = windowHeight/26;
   windowshape = 1;
   }
 
 } else if(windowWidth>windowHeight){
-  cellSize = windowHeight/24;
+  cellSize = windowHeight/26;
   windowshape = 2;
 }
 
@@ -124,8 +124,6 @@ function draw() {
 
   background(x);
 
-  image(maze, (a-(cellSize*0.3)), (b-(cellSize*0.3)), (cellSize*11.7), (cellSize*11.7));
-
 if(mouseIsPressed){
   if(mouseX > ((windowWidth/2)-(cellSize*3.5)) && mouseX < ((windowWidth/2)-(cellSize*2)) && mouseY > ((windowHeight/2)+(cellSize*5)) && mouseY < ((windowHeight/2)+(cellSize*6.5))){
     letter = letter - goUp;
@@ -150,6 +148,7 @@ if(mouseIsPressed){
     redant2();
     }
 
+  image(maze, (a-(cellSize*0.3)), (b-(cellSize*0.3)), (cellSize*11.7), (cellSize*11.7));
 imagestohide();
 
 if(showLegToken == false){
@@ -160,7 +159,7 @@ if(showLegToken == false){
     circle((number+(cellSize*0.35)), (letter+cellSize*0.35), i);
   }
   strokeWeight(100);
-  for(let p = 320; p<= 850; p+=100){
+  for(let p = 320; p<= 950; p+=100){
     stroke(0);
     circle((number+(cellSize*0.35)), (letter+cellSize*0.35), p);
   }
@@ -1048,7 +1047,6 @@ x = 200;
 
 
  function success(){
-  skipButton.hide();
   console.log("you win the game");
   successButton = createImg("images/success.jpg", "success button");
   successButton.position(a, b+(cellSize*1.5)); 

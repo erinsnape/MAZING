@@ -1042,6 +1042,7 @@ function losethegame(){
 
 function tryagain(){
   tryagainButton.hide();
+  skipButton.hide();
   life = 0;
 showParrotToken = true;
 showPigToken = true;
@@ -1066,4 +1067,6 @@ x = 200;
  function successMessage(){
   console.log("this will do something");
   successButton.hide();
+   tryagainButton.hide();
+   skipButton.hide();
  }

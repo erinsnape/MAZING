@@ -84,16 +84,16 @@ LEG = bLeg;
 
 if (windowHeight>windowWidth){
   if(windowHeight/24 > windowWidth/12){
-    cellSize = windowWidth/12;
+    cellSize = windowWidth/13;
       windowshape = 1;
   }
   if(windowHeight/24 < windowWidth/12){
-  cellSize = windowHeight/24;
+  cellSize = windowHeight/26;
   windowshape = 1;
   }
 
 } else if(windowWidth>windowHeight){
-  cellSize = windowHeight/24;
+  cellSize = windowHeight/26;
   windowshape = 2;
 }
 
@@ -145,6 +145,8 @@ if(mouseIsPressed){
  if(mouseX > ((windowWidth/2)-(cellSize*1.5)) && mouseX < ((windowWidth/2)-(cellSize*0)) && mouseY > ((windowHeight/2)+(cellSize*7)) && mouseY < ((windowHeight/2)+(cellSize*8.5))){
    number = number + goRight;
   }}
+
+  image(maze, (a-(cellSize*0.3)), (b-(cellSize*0.3)), (cellSize*11.7), (cellSize*11.7));
   
   if(showAntToken == false){
     //if(mouseIsPressed){
@@ -153,7 +155,6 @@ if(mouseIsPressed){
     redant2();
     }
 
-  image(maze, (a-(cellSize*0.3)), (b-(cellSize*0.3)), (cellSize*11.7), (cellSize*11.7));
 imagestohide();
 
 if(showLegToken == false){

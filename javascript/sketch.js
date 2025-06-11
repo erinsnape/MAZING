@@ -84,16 +84,16 @@ LEG = bLeg;
 
 if (windowHeight>windowWidth){
   if(windowHeight/24 > windowWidth/12){
-    cellSize = windowWidth/13;
+    cellSize = windowWidth/12;
       windowshape = 1;
   }
   if(windowHeight/24 < windowWidth/12){
-  cellSize = windowHeight/26;
+  cellSize = windowHeight/24;
   windowshape = 1;
   }
 
 } else if(windowWidth>windowHeight){
-  cellSize = windowHeight/26;
+  cellSize = windowHeight/24;
   windowshape = 2;
 }
 

@@ -7,10 +7,10 @@ let A;
 let B;
 let number;
 let letter;
-let goUp = (cellSize/28);
-let goDown = (cellSize/28);
-let goRight = (cellSize/28);
-let goLeft = (cellSize/28);
+let goUp;
+let goDown;
+let goRight;
+let goLeft;
 let currColumn = [];
 let currRow = [];
 let showParrotToken = true;
@@ -97,6 +97,11 @@ if (windowHeight>windowWidth){
   windowshape = 2;
 }
 
+goUp = (cellSize/28);
+goDown = (cellSize/28);
+goRight = (cellSize/28);
+goLeft = (cellSize/28);
+  
 console.log(cellSize);
 console.log(windowshape);
 

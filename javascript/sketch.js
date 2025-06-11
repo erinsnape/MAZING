@@ -1,5 +1,3 @@
-//fix speed
-
 let cellSize;
 let a;
 let b;

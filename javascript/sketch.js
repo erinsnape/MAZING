@@ -429,9 +429,6 @@ if(anty == b+(cellSize * 5) && antx == a+(cellSize * 8)){
 
  image(WHATKINDAANT, antx + (cellSize*0.2), anty+ (cellSize*0.2), cellSize*0.6, cellSize*0.7); 
 
-  console.log(anty);
-  console.log(b+(cellSize * 4));
-
 }
 
 function imagestohide(){

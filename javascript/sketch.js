@@ -169,8 +169,8 @@ if(mouseIsPressed){
 
   image(maze, (a-(cellSize*0.3)), (b-(cellSize*0.3)), (cellSize*11.7), (cellSize*11.7));
   
-  //if(showAntToken == false){
-    if(mouseIsPressed){
+  if(showAntToken == false){
+   // if(mouseIsPressed){
       capture = true;
     redant1();
     redant2();
@@ -341,9 +341,16 @@ function redant1(){
       anty-=speed;
     }
   }
+//joint
+if(antx == a+(cellSize * 4) && anty == b+(cellSize * 2){
+        anty-=0;
+      antx += speed;
+    WHATKINDAANT = antsright;
+}
+  
 if(anty == b+(cellSize * 2) && antx < a+(cellSize * 5) && antx >= b+(cellSize * 4)){
     antx += speed;
-   // WHATKINDAANT = antsright;
+    WHATKINDAANT = antsright;
  }
 //down
  if(antx == a+(cellSize * 5) && anty >= b+(cellSize * 2) && anty < b+(cellSize * 3)){

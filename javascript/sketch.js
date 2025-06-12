@@ -122,7 +122,7 @@ ant2x = (a);
 
 hereIsErrorButton();
 losethegame();
-  success();
+success();
 
 speedStart = cellSize/28;
 
@@ -692,8 +692,13 @@ letter = letter -1 ;
 
   if(showPigToken == false && showAntToken == false && showLegToken == false && showParrotToken == false){
     error = false;
-    goDown = (cellSize/28);
-    success();
+      if(speedStart => 0.75){
+      goDown = 1;
+      }
+      if(speedStart < 0.75){
+      goDown = 0.5;
+      }
+    successButton.show();
     errorButton.hide();
     letter = letter -1 ;
   }
@@ -1077,7 +1082,7 @@ function losethegame(){
 
   skipButton.position(a+(cellSize*5.5), b+(cellSize*4)); 
   skipButton.size((cellSize * 5), (cellSize * 3));
-  skipButton.mousePressed(success);
+  skipButton.mousePressed(skipped);
   skipButton.hide();
 
 }
@@ -1096,9 +1101,7 @@ x = 200;
 
 }
 
-
  function success(){
-  console.log("you win the game");
   successButton = createImg("images/success.jpg", "success button");
   successButton.position(a, b+(cellSize*1.5)); 
   successButton.size((cellSize * 11), (cellSize * 8));
@@ -1107,8 +1110,12 @@ x = 200;
  }
 
  function successMessage(){
-  console.log("this will do something");
+console.log("this will take you to spotify");
   successButton.hide();
    tryagainButton.hide();
    skipButton.hide();
  }
+
+function skipped(){
+  successButton.show();
+}

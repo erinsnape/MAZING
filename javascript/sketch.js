@@ -623,6 +623,8 @@ determineCurrentCell();
 
 currCell = currRow + currColumn;
 
+  console.log(currCell);
+
 //trapdoors
 if(currCell == "e3"){
   number = a+(cellSize * 7.4);

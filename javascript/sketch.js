@@ -46,6 +46,9 @@ function setup() {
 
 createCanvas(windowWidth, windowHeight);
 
+  console.log(windowWidth);
+  console.log(windowHeight);
+
   maze = loadImage("images/maze.jpg");
   antsup = loadImage("images/antaup.gif");
   antsright = loadImage("images/antsright.gif");

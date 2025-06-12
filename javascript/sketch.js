@@ -613,7 +613,7 @@ determineCurrentCell();
 
 currCell = currRow + currColumn;
 
-  console.log(currCell);
+  //console.log(currCell);
 
 //trapdoors
 if(currCell == "e3"){

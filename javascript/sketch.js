@@ -141,6 +141,8 @@ goDown = 0.5;
 goRight = 0.5;
 goLeft = 0.5;
 }
+
+  console.log(speed);
   
 }
 

@@ -1,3 +1,4 @@
+let cellStart;
 let cellSize;
 let a;
 let b;
@@ -26,6 +27,7 @@ let antx;
 let anty;
 let ant2x;
 let ant2y;
+let speedStart;
 let speed;
 let character;
 let WHATKINDAANT;
@@ -84,18 +86,20 @@ LEG = bLeg;
 
 if (windowHeight>windowWidth){
   if(windowHeight/24 > windowWidth/12){
-    cellSize = windowWidth/12;
+    cellStart = windowWidth/12;
       windowshape = 1;
   }
   if(windowHeight/24 < windowWidth/12){
-  cellSize = windowHeight/24;
+  cellStart = windowHeight/24;
   windowshape = 1;
   }
 
 } else if(windowWidth>windowHeight){
-  cellSize = windowHeight/24;
+  cellStart = windowHeight/24;
   windowshape = 2;
 }
+
+  cellSize = Math.round(cellStart);
 
 goUp = (cellSize/28);
 goDown = (cellSize/28);
@@ -124,7 +128,8 @@ hereIsErrorButton();
 losethegame();
   success();
 
-speed = cellSize/28;
+speedStart = cellSize/28;
+  speed = Math.round(speedStart);
 }
 
 function draw() {
@@ -287,6 +292,7 @@ function redant1(){
   }
   //joint
   if(antx == a+(cellSize * 5) && anty ==  b+(cellSize * 4)){
+    console.log("this happened")
   anty -= 0;
     antx += speed;
   }

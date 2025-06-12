@@ -41,6 +41,11 @@ let life = 0;
 let HEART1;
 let HEART2;
 let HEART3;
+let words;
+let c = 255;
+let one = 255;
+let two = 255;
+let button;
 
 function setup() {
 
@@ -186,9 +191,39 @@ if(showLegToken == false){
 
   images();
   myCharacter();
-  
-//drawCells();
 
+fill(255, c);
+rect(0, 0, windowWidth, windowHeight);
+fill(one, c);
+text('Hello.', a, b);
+fill(two, c);
+words = 'Do you want to find love?';
+text(words, a, b + (cellSize*2));
+
+}
+
+setTimeout(oneMessage, 1000);
+setTimeout(twoMessage, 4000);
+setTimeout(gameStartButton, 6000);
+
+function oneMessage(){
+  one = 0;
+}
+
+function twoMessage(){
+  two = 0;
+}
+
+function gameStartButton(){
+  button = createButton('yes');
+  button.position(a, b + (cellSize*2.7));
+  button.mousePressed(startthegame);
+}
+
+function startthegame(){
+  c = 0;
+  console.log("start");
+  button.hide();
 }
 
 function redant2(){

@@ -148,8 +148,8 @@ if(mouseIsPressed){
 
   image(maze, (a-(cellSize*0.3)), (b-(cellSize*0.3)), (cellSize*11.7), (cellSize*11.7));
   
-  if(showAntToken == false){
-    //if(mouseIsPressed){
+  //if(showAntToken == false){
+    if(mouseIsPressed){
       capture = true;
     redant1();
     redant2();
@@ -393,6 +393,9 @@ if(anty == b+(cellSize * 5) && antx == a+(cellSize * 8)){
 }
 
  image(WHATKINDAANT, antx + (cellSize*0.2), anty+ (cellSize*0.2), cellSize*0.6, cellSize*0.7); 
+
+  console.log(antx);
+  console.log( a+(cellSize * 5);
 
 }
 

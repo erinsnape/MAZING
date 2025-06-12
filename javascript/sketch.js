@@ -876,7 +876,7 @@ goDown = 0;
 }
 }
 
-if(currCell == "i4" || currCell == "i7" || currCell == "i9"){
+if(currCell == "i4" || currCell == "i6" || currCell == "i9"){
 if((letter+(cellSize)) >= B){
 goDown = 0;
 }

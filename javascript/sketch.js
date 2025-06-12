@@ -48,7 +48,7 @@ function setup() {
 
 createCanvas(windowWidth, windowHeight);
 
-  console.log("ive updated with rounding");
+  console.log("ive updated with all the rounding");
 
   maze = loadImage("images/maze.jpg");
   antsup = loadImage("images/antaup.gif");
@@ -99,12 +99,7 @@ if (windowHeight>windowWidth){
   windowshape = 2;
 }
 
-  cellSize = Math.round(cellStart);
-
-goUp = (cellSize/28);
-goDown = (cellSize/28);
-goRight = (cellSize/28);
-goLeft = (cellSize/28);
+cellSize = Math.round(cellStart);
 
 console.log(cellStart);
 console.log(cellSize);
@@ -130,7 +125,23 @@ losethegame();
   success();
 
 speedStart = cellSize/28;
-  speed = Math.round(speedStart);
+
+if(speedStart => 0.75){
+speed = 1;
+goUp = 1;
+goDown = 1;
+goRight = 1;
+goLeft = 1;
+}
+
+if(speedStart < 0.75){
+speed = 0.5;
+goUp = 0.5;
+goDown = 0.5;
+goRight = 0.5;
+goLeft = 0.5;
+}
+  
 }
 
 function draw() {
@@ -620,10 +631,19 @@ if(currCell == "e8" && number < (A - (cellSize * 0.7))){
 //console.log(number);
 //console.log(currCell);
 
-goRight = (cellSize/28);
-goUp = (cellSize/28);
-goLeft = (cellSize/28);
-goDown = (cellSize/28);
+if(speedStart => 0.75){
+goUp = 1;
+goDown = 1;
+goRight = 1;
+goLeft = 1;
+}
+
+if(speedStart < 0.75){
+goUp = 0.5;
+goDown = 0.5;
+goRight = 0.5;
+goLeft = 0.5;
+}
 
 
 if (number > (A )){

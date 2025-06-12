@@ -342,7 +342,7 @@ function redant1(){
     }
   }
 //joint
-if(antx == a+(cellSize * 4) && anty == b+(cellSize * 2){
+if(antx == a+(cellSize * 4) && anty == b+(cellSize * 2)){
         anty-=0;
       antx += speed;
     WHATKINDAANT = antsright;

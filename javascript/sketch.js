@@ -46,7 +46,7 @@ function setup() {
 
 createCanvas(windowWidth, windowHeight);
 
-  console.log("ive updated);
+  console.log("ive updated");
 
   maze = loadImage("images/maze.jpg");
   antsup = loadImage("images/antaup.gif");

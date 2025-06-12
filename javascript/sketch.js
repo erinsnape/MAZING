@@ -51,11 +51,6 @@ function setup() {
 
 createCanvas(windowWidth, windowHeight);
 
-ANT = bAnt;
-PIG = bPig;
-PARROT = bParrot;
-LEG = bLeg;
-
 if (windowHeight>windowWidth){
   if(windowHeight/24 > windowWidth/12){
     cellStart = windowWidth/12;
@@ -73,7 +68,7 @@ if (windowHeight>windowWidth){
 
 cellSize = Math.round(cellStart);
 
-    maze = loadImage("images/maze.jpg");
+  maze = loadImage("images/maze.jpg");
   antsup = loadImage("images/antaup.gif");
   antsright = loadImage("images/antsright.gif");
   antsdown = loadImage("images/antsdown.gif");
@@ -100,6 +95,11 @@ cellSize = Math.round(cellStart);
   ant = loadImage("images/ant.png");
   question = loadImage("images/question.png");
   trapdoor = loadImage("images/trap.jpg");
+
+ANT = bAnt;
+PIG = bPig;
+PARROT = bParrot;
+LEG = bLeg;
 
 a = (windowWidth/2)-(cellSize*5.5);
 b = (windowHeight/2)-(cellSize*7);

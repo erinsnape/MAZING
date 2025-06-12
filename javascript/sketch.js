@@ -343,12 +343,12 @@ function redant1(){
   }
 //joint
 if(antx == a+(cellSize * 4) && anty == b+(cellSize * 2)){
-        anty-=0;
+      anty -= 0;
       antx += speed;
     WHATKINDAANT = antsright;
 }
   
-if(anty == b+(cellSize * 2) && antx < a+(cellSize * 5) && antx >= b+(cellSize * 4)){
+if(anty == b+(cellSize * 2) && antx < a+(cellSize * 5) && antx >= a+(cellSize * 4)){
     antx += speed;
     WHATKINDAANT = antsright;
  }
@@ -358,7 +358,7 @@ if(anty == b+(cellSize * 2) && antx < a+(cellSize * 5) && antx >= b+(cellSize * 
   WHATKINDAANT = antsdown;
 }
 //right
-if(anty == b+(cellSize * 3) && antx < a+(cellSize * 6) && antx >= b+(cellSize * 5)){
+if(anty == b+(cellSize * 3) && antx < a+(cellSize * 6) && antx >= a+(cellSize * 5)){
   antx += speed;
   WHATKINDAANT = antsright;
 }
@@ -368,7 +368,7 @@ if(antx == a+(cellSize * 6) && anty > b+(cellSize * 2) && anty <= b+(cellSize * 
   WHATKINDAANT = antsup;
 }
 //right
-if(anty == b+(cellSize * 2) && antx < a+(cellSize * 7) && antx >= b+(cellSize * 6)){
+if(anty == b+(cellSize * 2) && antx < a+(cellSize * 7) && antx >= a+(cellSize * 6)){
   antx += speed;
   WHATKINDAANT = antsright;
 }
@@ -378,7 +378,7 @@ if(antx == a+(cellSize * 7) && anty >= b+(cellSize * 2) && anty < b+(cellSize * 
   WHATKINDAANT = antsdown;
 }
 //right
-if(anty == b+(cellSize * 3) && antx < a+(cellSize * 9) && antx >= b+(cellSize * 7)){
+if(anty == b+(cellSize * 3) && antx < a+(cellSize * 9) && antx >= a+(cellSize * 7)){
   antx += speed;
   WHATKINDAANT = antsright;
 }
@@ -388,7 +388,7 @@ if(antx == a+(cellSize * 9) && anty > b && anty <= b+(cellSize * 3)){
   WHATKINDAANT = antsup;
 }
 //right
-if(anty == b && antx < a+(cellSize * 10) && antx >= b+(cellSize * 9)){
+if(anty == b && antx < a+(cellSize * 10) && antx >= a+(cellSize * 9)){
   antx += speed;
   WHATKINDAANT = antsright;
 }
@@ -407,7 +407,7 @@ if(antx == a+(cellSize * 8) && anty > b+(cellSize * 9) && anty <= b+(cellSize * 
   WHATKINDAANT = antsup;
 }
 //right
-if(anty == b+(cellSize * 9) && antx < a+(cellSize * 9) && antx >= b+(cellSize * 8)){
+if(anty == b+(cellSize * 9) && antx < a+(cellSize * 9) && antx >= a+(cellSize * 8)){
   antx += speed;
   WHATKINDAANT = antsright;
 }

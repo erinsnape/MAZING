@@ -44,11 +44,7 @@ let HEART3;
 
 function setup() {
 
-//  willReadFrequently = true;
-
 createCanvas(windowWidth, windowHeight);
-
-  console.log("ive updated with all the rounding");
 
   maze = loadImage("images/maze.jpg");
   antsup = loadImage("images/antaup.gif");
@@ -103,7 +99,6 @@ cellSize = Math.round(cellStart);
 
 console.log(cellStart);
 console.log(cellSize);
-console.log(windowshape);
 
 a = (windowWidth/2)-(cellSize*5.5);
 b = (windowHeight/2)-(cellSize*7);
@@ -142,7 +137,7 @@ goRight = 0.5;
 goLeft = 0.5;
 }
 
-  console.log(speed);
+console.log(speed);
   
 }
 
@@ -306,7 +301,6 @@ function redant1(){
   }
   //joint
   if(antx == a+(cellSize * 5) && anty ==  b+(cellSize * 4)){
-    console.log("this happened")
   anty -= 0;
     antx += speed;
   }
@@ -1072,17 +1066,16 @@ errorButton.hide();
  }
 
 function losethegame(){
-  console.log("you lose the game");
   
   tryagainButton = createImg("images/tryagain.jpg", "try again button");
   skipButton = createImg("images/skip.jpg", "skip button");
  
-  tryagainButton.position(a+(cellSize*0.5), b+(cellSize*4)); 
+  tryagainButton.position(a+(cellSize*0.3), b+(cellSize*4)); 
   tryagainButton.size((cellSize * 5), (cellSize * 3));
   tryagainButton.mousePressed(tryagain);
   tryagainButton.hide();
 
-  skipButton.position(a+(cellSize*5.5), b+(cellSize*4)); 
+  skipButton.position(a+(cellSize*5.7), b+(cellSize*4)); 
   skipButton.size((cellSize * 5), (cellSize * 3));
   skipButton.mousePressed(skipped);
   skipButton.hide();

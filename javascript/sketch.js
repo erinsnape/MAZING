@@ -105,7 +105,8 @@ goUp = (cellSize/28);
 goDown = (cellSize/28);
 goRight = (cellSize/28);
 goLeft = (cellSize/28);
-  
+
+console.log(cellStart);
 console.log(cellSize);
 console.log(windowshape);
 

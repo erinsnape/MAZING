@@ -286,7 +286,7 @@ function redant1(){
     anty -= speed;
   }
   //joint
-  if(antx == a+(cellSize * 5) && anty ==  b+(cellSize * 4){
+  if(antx == a+(cellSize * 5) && anty ==  b+(cellSize * 4)){
   anty -= 0;
     antx += speed;
   }

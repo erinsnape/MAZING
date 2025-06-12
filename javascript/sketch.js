@@ -286,6 +286,12 @@ function redant1(){
    WHATKINDAANT = antsup;
     anty -= speed;
   }
+  //joint
+  if(antx == a+(cellSize * 5) && anty ==  b+(cellSize * 4){
+  anty -= 0;
+    antx += speed;
+  }
+  
 //going right
   if(anty == b+(cellSize * 4) && antx < a+(cellSize * 6) && antx >= a+(cellSize * 5)){
       WHATKINDAANT = antsright;

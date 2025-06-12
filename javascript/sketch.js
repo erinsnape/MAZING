@@ -398,7 +398,7 @@ if(anty == b+(cellSize * 5) && antx == a+(cellSize * 8)){
  image(WHATKINDAANT, antx + (cellSize*0.2), anty+ (cellSize*0.2), cellSize*0.6, cellSize*0.7); 
 
   console.log(antx);
-  console.log( a+(cellSize * 5);
+  console.log( a+(cellSize * 5));
 
 }
 

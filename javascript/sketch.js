@@ -46,6 +46,7 @@ let c = 255;
 let one = 255;
 let two = 255;
 let button;
+let start = true;
 
 function setup() {
 
@@ -144,7 +145,7 @@ console.log(speed);
 
 function draw() {
 
-  background(x);
+background(x);
 
 if(mouseIsPressed){
   if(mouseX > ((windowWidth/2)-(cellSize*3.5)) && mouseX < ((windowWidth/2)-(cellSize*2)) && mouseY > ((windowHeight/2)+(cellSize*5)) && mouseY < ((windowHeight/2)+(cellSize*6.5))){
@@ -192,6 +193,7 @@ if(showLegToken == false){
   images();
   myCharacter();
 
+if(start == true){
 fill(255, c);
 rect(0, 0, windowWidth, windowHeight);
 fill(one, c);
@@ -199,6 +201,7 @@ text('Hello.', a, b);
 fill(two, c);
 words = 'Do you want to find love?';
 text(words, a, b + (cellSize*2));
+}
 
 }
 
@@ -224,6 +227,7 @@ function startthegame(){
   c = 0;
   console.log("start");
   button.hide();
+  start = false;
 }
 
 function redant2(){
